@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" />
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="logo-content">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="about.html">NOSOTROS</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="galeria.html">GALERÍA</a></li>
+            <li><a href="cupones.html">CUPONES</a></li>
+            <li><a class="seleccionado" href="contactos.html">CONTACTOS</a></li>
+        </ul>
+        <div class="logo-content">
+        </div>
+    </header>
+
+    <div class="contenedores">
+        <div class="contenedor-izquierdo">
+            <h1>CONTACTOS</h1>
+            <form class="caja-contenedora" id="formulario">
+                <div class="contenedor-input">
+                    <div class="agrupador">
+                        <label for="Nombre">Nombre <span>*</span></label>
+                        <input type="text" id="Nombre">
+                    </div>
+                    <div class="agrupador">
+                        <label for="Apellido">Apellido <span>*</span></label>
+                        <input type="text" id="Apellido">
+                    </div>
+                </div>
+                <div class="agrupador">
+                    <label for="Email">Email <span>*</span></label>
+                    <input type="text" id="Email">
+                </div>
+                <div class="agrupador">
+                    <label for="Telefono">Teléfono <span>*</span></label>
+                    <input type="text" id="Telefono">
+                </div>
+                <div class="agrupador">
+                    <label for="Comentario">Comentario <span>*</span></label>
+                    <textarea type="text" id="Comentario"></textarea>
+                </div>
+                <button class="enviar" type="button">ENVIAR</button>
+            </form>
+        </div>
+        <div class="contenedor-derecho">
+            <h2>¿COMO PODEMOS AYUDARTE?</h2>
+            <p>Para obtener más información sobre nuestros servicios o dejar comentarios, complete el formulario de
+                contacto a continuación. Un miembro de nuestro equipo se pondrá en contacto con usted lo antes posible.
+            </p>
+            <h3>PREGUNTAS FRECUENTES</h3>
+            <div class="preguntas">
+                <div class="pregunta">
+                    <div class="pregunta-head">
+                        <p class="pregunta-frecuente">¿CUÁLES SON LOS REQUISITOS PARA TRABAJAR EN BURGER KING?</p>
+                        <i class="fa-solid fa-chevron-right trabajar-bk"></i>
+                    </div>
+                    <p class="contenedor-respuesta cont-trabajo">En BurgerKing valoramos la diversidad y el talento. Los requisitos específicos pueden variar
+                        según el puesto, pero en general buscamos individuos apasionados, orientados al servicio al
+                        cliente y con habilidades para trabajar en equipo.</p>
+                </div>
+                <div class="pregunta">
+                    <div class="pregunta-head">
+                        <p class="pregunta-frecuente"> ¿QUÉ TIPOS DE BENEFICIOS OFRECEN A SUS EMPLEADOS LA EMPRESA?</p>
+                        <i class="fa-solid fa-chevron-right beneficios-bk"></i>
+                    </div>
+                    <p class="contenedor-respuesta cont-beneficio">Ofrecemos una variedad de beneficios que incluyen seguro médico, planes de retiro, descuentos en
+                        comidas y oportunidades de crecimiento profesional. Además, promovemos un ambiente de trabajo
+                        inclusivo y colaborativo donde cada miembro del equipo se sienta valorado y respetado.</p>
+                </div>
+                <div class="pregunta">
+                    <div class="pregunta-head">
+                        <p class="pregunta-frecuente"> ¿HAY OPORTUNIDADES DE CRECIMIENTO PROFESIONAL DENTRO DE LA
+                            EMPRESA?</p>
+                        <i class="fa-solid fa-chevron-right crecimiento-bk"></i>
+                    </div>
+
+                    <p class="contenedor-respuesta cont-crecimiento">Sí, en BurgerKing valoramos el crecimiento y el desarrollo de nuestros empleados. Ofrecemos
+                        programas de capacitación y desarrollo continuo para ayudar a nuestros miembros del equipo a
+                        alcanzar sus metas profesionales. Muchos de nuestros líderes comenzaron su carrera en puestos de
+                        nivel inicial y han avanzado dentro de la empresa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="informacion-adicional caja-contenedora form">
+        <div class="agrupador-icono">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Localidades</p>
+            <span>Principal Churchill</span>
+        </div>
+        <div class="agrupador-icono">
+            <i class="fa-regular fa-envelope"></i>
+            <p>Email</p>
+            <span>info@burgerking.com.do</span>
+        </div>
+        <div class="agrupador-icono">
+            <i class="fa-solid fa-phone"></i>
+            <p>Teléfono</p>
+            <span>(809) 955-3085</span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>2024 Burger King. Todos los derechos reservados. Síguenos:
+            <a href="https://www.facebook.com/BurgerKingRepublicaDominicana/" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/burgerking/" target="_blank">Instagram</a> |
+            <a href="https://twitter.com/BurgerKing" target="_blank">Twitter</a>
+        </p>
+        <div class="media-contenedor">
+            <div class="media">
+                <img src="./img/facebook.png" alt="facebook">
+            </div>
+            <div class="media">
+                <img src="./img/instagram.png" alt="instagram">
+            </div>
+            <div class="media">
+                <img src="./img/twitter.png" alt="twitter">
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        const nombre = document.forms['formulario']['Nombre'];
+        const apellido = document.forms['formulario']['Apellido'];
+        const email = document.forms['formulario']['Email'];
+        const telefono = document.forms['formulario']['Telefono'];
+        const comentario = document.forms['formulario']['Comentario'];
+        const boton = document.querySelector('.enviar');
+        
+        const trabajarBK = document.querySelector('.trabajar-bk');
+        const contTrabajo = document.querySelector('.cont-trabajo');
+        const beneficiosBK = document.querySelector('.beneficios-bk');
+        const contBeneficio = document.querySelector('.cont-beneficio');
+        const crecimientoBK = document.querySelector('.crecimiento-bk');
+        const contCrecimiento = document.querySelector('.cont-crecimiento');
+
+        boton.addEventListener('click',e=>{            
+            if( nombre.value != '' || apellido.value != '' || email.value != '' || telefono.value != '' || comentario.value != ''){
+                alert('Su formulario fue enviado correctamente');
+            }
+            else{
+                alert('Por favor llene todos los campos');
+            }
+        });
+
+        trabajarBK.addEventListener('click',e=>{
+            contTrabajo.style.height = '100px';
+            trabajarBK.style.rotate = '-90deg';
+        });
+
+        beneficiosBK.addEventListener('click',e=>{
+            contBeneficio.style.height = '100px';
+            beneficiosBK.style.rotate = '-90deg';
+        });
+
+        crecimientoBK.addEventListener('click',e=>{
+            contCrecimiento.style.height = '120px';
+            crecimientoBK.style.rotate = '-90deg';
+        });
+
+    </script>
+</body>

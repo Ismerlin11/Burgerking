@@ -1,0 +1,696 @@
+@font-face {
+    font-family: 'burgerKing';
+    src: url('./font/FlameBold.otf') format('woff2'),
+        url('./font/FlameBold.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'burgerKingRegular';
+    src: url('./font/FlameRegular.otf') format('woff2'),
+        url('./font/FlameRegular.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'burgerKingSans';
+    src: url('./font/FlameSans.otf') format('woff2'),
+        url('./font/FlameSans.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #F5EBDC;
+    font-family: 'burgerKing', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'burgerKingSans', 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'burgerKing', 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-family: 'burgerKingRegular', 'Roboto', sans-serif;
+}
+
+header.cabecera {
+    background-color: #FF8733;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.cabecera .logo-content {
+    width: 200px;
+    height: 74%;
+}
+
+header.cabecera ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header.cabecera ul li {
+    margin: 0 10px;
+}
+
+header.cabecera ul li a {
+    font-size: 36px;
+    text-decoration: none;
+    color: #F5EBDC;
+    font-weight: 800;
+}
+
+header.cabecera ul li a.seleccionado {
+    color: #502314;
+}
+
+section.imagen-principal-contenedor {
+    position: relative;
+    height: 860px;
+    width: 100%;
+}
+
+section.imagen-principal-contenedor .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff883330;
+}
+
+section.imagen-principal-contenedor h1 {
+    font-size: 70px;
+    position: absolute;
+    color: white;
+    left: 110px;
+    top: 78px;
+    z-index: 1;
+    text-shadow: 1px 1px 5px #000;
+}
+
+section.imagen-principal-contenedor .imagen-principal {
+    width: 100%;
+    height: 100%;
+}
+
+section.imagen-principal-contenedor .imagen-principal img {
+    object-fit: cover;
+}
+
+section.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+    padding: 10px;
+    background-color: #D4760D;
+}
+
+section.about .contenedor-texto {
+    width: 70%;
+}
+
+section.about .contenedor-texto p {
+    font-size: 24px;
+    color: #F5EBDC;
+}
+
+section.about a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4760D;
+    border: solid 4px #F5EBDC;
+    width: 450px;
+    height: 75px;
+    border-radius: 50px;
+    font-size: 35px;
+    color: #F5EBDC;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section.about a:hover {
+    background-color: #F5EBDC;
+    color: #D4760D;
+}
+
+section.guest-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #F5EBDC;
+}
+
+.guest {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #502314;
+    color: #F5EBDC;
+    padding: 46px;
+}
+
+.guest h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.guest .cartas {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.guest .carta-guest {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.guest .carta-guest .corchetes {
+    align-self: start;
+}
+
+.guest .carta-guest .comentario {
+    font-size: 20px;
+}
+
+.guest .carta-guest .cliente {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+}
+
+.guest .carta-guest .cliente p {
+    font-size: 24px;
+    position: absolute;
+    bottom: -20px;
+    right: -70px;
+    color: #FF8733;
+}
+
+.experiencia-gourmet {
+    padding: 20px 70px;
+    background-color: #D4760D;
+    display: flex;
+}
+
+.contenido-gourmet h1 {
+    font-size: 50px;
+    color: #57200f;
+    font-family: burgerKingRegular;
+}
+
+.contenido-gourmet p {
+    font-size: 26px;
+    width: 90%;
+    color: #F5EBDC;
+}
+
+.imagen-chef {
+    width: 600px;
+    position: relative;
+}
+
+.imagen-chef img {
+    position: absolute;
+    height: 368px;
+    top: -80px;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: #FF8733;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+footer a {
+    color: #502314;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+footer a:hover {
+    color: #F5EBDC;
+}
+
+.media-contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+.media-contenedor .media {
+    width: 50px;
+    height: 50px;
+}
+
+/* NOSOTROS */
+
+.nosotros-historia {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #D3D3D0;
+    padding: 80px 220px 0;
+    text-align: center;
+}
+
+.nosotros-historia h1 {
+    font-size: 66px;
+    margin: 0;
+}
+
+.nosotros-historia p {
+    font-size: 30px;
+}
+
+/* .imagen-nosotros {
+    margin-bottom: 90px;
+} */
+
+/* MENU */
+
+.menu-section h1 {
+    font-size: 80px;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    color: #ff8733;
+    text-decoration: underline #502314;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #F5EBDC;
+    color: #F5EBDC;
+    padding: 80px 150px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #502314;
+    padding: 40px 10px;
+    margin: 30px;
+    border-radius: 26px;
+    text-decoration: none;
+    transition: 0.3s transform;
+}
+
+.menu-item:hover {
+    transform: translate(0, -10px);
+
+}
+
+.menu-item .platos {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+.menu-item .platos img {
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: 0.3s filter;
+}
+
+
+
+.menu-item:hover .platos img {
+    filter: grayscale(0%);
+}
+
+.menu-item h2 {
+    color: #FF8733;
+    font-size: 37px;
+    margin: 20px 0;
+}
+
+.nuestro-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EBDC;
+    padding-bottom: 60px;
+}
+
+.nuestro-menu .titulo {
+    text-align: center;
+    font-size: 46px;
+    padding: 30px 40px;
+    border-radius: 26px;
+    background-color: #FF8733;
+    color: #502314;
+    text-decoration: none;
+}
+
+/* DETALLE DEL MENU */
+.menu-section-detalle h1 {
+    font-size: 90px;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    color: #502314;
+    margin-bottom: 75px;
+    text-decoration: underline #ff8733;
+}
+
+.detalle-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 18px;
+    margin-bottom: 150px;
+}
+
+.detalle-menu .detalle {
+    transition: 0.2s;
+    transform: scale(1);
+    margin-bottom: 60px;
+}
+.detalle-menu .detalle:hover {
+    transform: scale(1.2);
+}
+
+.detalle-menu .detalle .informacion-comida {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalle-menu .detalle .informacion-comida h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.detalle-menu .detalle p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.nombre {
+    color: #FF8733;
+}
+
+.precio {
+    color: #502314;
+    margin-left: 8px !important;
+}
+
+/* GALERIA */
+
+section.main-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: #F5EBDC;
+}
+
+section.main-video .video-content {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.video-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-content{
+    width: 100%;
+    height: 110vh;
+}
+
+.image-burger {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #FF8733;
+}
+
+.image-burger .burger-img {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.burger-img img {
+    border-radius: 20px;
+    transition: 0.4s;
+    transform: scale(.95);
+}
+.burger-img img:hover {
+    transform: scale(1);
+}
+/* CUPONES */
+
+.cupon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #57200f;
+    padding: 80px 150px;
+}
+
+.cupon1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f9ecdc;
+    padding: 80px 150px;
+}
+
+/* CONTACTOS */
+
+.contenedores {
+    display: flex;
+    font-family: burgerKingSans;
+    padding: 40px 150px;
+    gap: 70px;
+}
+
+.contenedor-izquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+
+.contenedor-izquierdo h1 {
+    font-size: 60px;
+    color: #502314;
+    text-decoration: underline #ff8733;
+    text-align: center;
+    font-family: burgerKing;
+}
+
+.caja-contenedora .form {
+    max-width: 100%;
+    width: 450px;
+}
+
+.caja-contenedora {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 7px 20px #00000050;
+    border-radius: 12px;
+    border-top: solid 16px #57200f;
+
+}
+
+.contenedor-izquierdo .contenedor-input {
+    display: flex;
+    width: 100%;
+    gap: 20px
+}
+
+.contenedor-izquierdo .agrupador {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+.contenedor-izquierdo .agrupador label {
+    font-size: 18px;
+    color: #502314;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.contenedor-izquierdo .agrupador label span {
+    color: #FF8733;
+}
+
+.contenedor-izquierdo .agrupador input {
+    border: solid 2px #ff8733;
+    border-radius: 10px;
+    height: 50px;
+    background-color: #F5EBDC;
+    padding: 0 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.contenedor-izquierdo .agrupador textarea {
+    border: solid 2px #ff8733;
+    border-radius: 10px;
+    height: 100px;
+    background-color: #F5EBDC;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+button.enviar {
+    background-color: #FF8733;
+    color: #F5EBDC;
+    border: solid 2px #ff8833;
+    border-radius: 50px;
+    height: 73px;
+    font-size: 34px;
+    cursor: pointer;
+    padding: 0px 41px;
+}
+
+.contenedor-derecho {
+    width: 50%;
+}
+
+.contenedor-derecho h2 {
+    font-size: 40px;
+}
+
+.contenedor-derecho h3 {
+    font-family: 'burgerKingRegular', 'Roboto', sans-serif;
+    font-size: 36px;
+}
+
+.contenedor-derecho p {
+    font-size: 20px;
+}
+
+.pregunta .pregunta-head{
+    display: flex;
+    position: relative;
+}
+
+.pregunta .pregunta-head i{
+    position: absolute;
+    right: -26px;
+    top: 44px;
+    font-size: 26px;
+    rotate: 90deg;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.contenedor-respuesta{
+    overflow: hidden;
+    height: 0;
+    transition: 0.4s;
+}
+
+p.pregunta-frecuente {
+    font-family: 'burgerKingRegular', 'Roboto', sans-serif;
+    font-size: 24px !important;
+    color: #FF8733;
+    border-bottom: solid 2px #502314;
+    padding-bottom: 18px;
+}
+
+.informacion-adicional {
+    margin: 20px 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;
+}
+
+.agrupador-icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: burgerKingSans;
+    font-size: 20px;
+}
+
+.agrupador-icono i {
+    font-size: 50px;
+    color: #FF8733;
+}
